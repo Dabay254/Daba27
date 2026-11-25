@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabay Sports Shop</title>
+    <link rel="stylesheet" href="dabay.css">
+</head>
+<body>
+
+<header class="hero">
+    <img class="hero-bg" src="pexels-sugar-jet-750021845-20688402.jpg" alt="Athletes in action" fetchpriority="high" data-done="1">
+
+    <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776; Menu</button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home" data-home class="active">Home</a>
+            <!-- sport links are added by the script from SPORTS -->
+        </div>
+        <div class="nav-actions">
+            <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h1>Dabay Sports Shop</h1>
+        <p>Your trusted store for sports equipment and merchandise</p>
+    </div>
+</header>
+
+<main>
+
+    <!-- HOME PAGE -->
+    <section id="home">
+        <div class="hero-intro">
+            <h2>Welcome to Dabay Sports Shop</h2>
+            <p>
+                Dabay Sports Shop provides different types of sports equipment,
+                clothing and accessories for athletes, sports teams and fitness enthusiasts.
+            </p>
+            <p class="tagline">Our aim is to make quality sports products available at affordable prices.</p>
+        </div>
+
+        <h2>Explore Our Sports Categories</h2>
+
+        <input type="text" id="search-input" placeholder="Search for a sport, brand or product...">
+
+        <div id="search-results-container" hidden>
+            <h3>Search Results</h3>
+            <div class="products" id="search-results"></div>
+        </div>
+
+        <div class="categories"><!-- category tiles are added by the script --></div>
+    </section>
+
+    <!-- SPORT SECTIONS are added by the script -->
+    <div id="sport-sections"></div>
+
+    <!-- SHOPPING CART -->
+    <section id="cart-section" hidden>
+        <button class="back-button" data-home>&larr; Back to Home</button>
+        <h2>Your Shopping Cart</h2>
+
+        <ul id="cart-items"></ul>
+        <p id="empty-cart-msg">Your cart is empty. Pick a sport to start shopping.</p>
+
+        <div class="cart-summary">
+            <h3>Total: KSh <span id="cart-total">0</span></h3>
+            <div class="cart-actions">
+                <button id="checkout-btn">Order on WhatsApp</button>
+                <button id="clear-cart">Clear Cart</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Dabay Sports Shop. All rights reserved.</p>
+    <p>Made by Louis Ngatia: AI Product Studio.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
